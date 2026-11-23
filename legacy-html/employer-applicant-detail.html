@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Detail - HireFlow</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f3f4f6] leading-6 text-[#1f2937] ![font-family:Inter,sans-serif]">
+    <header class="navbar sticky top-0 z-[100] bg-white shadow-sm">
+      <div class="container nav-container mx-auto max-w-[1200px] px-5 flex h-[70px] items-center justify-between">
+        <a href="index.html" class="logo text-[#0066CC] no-underline"><span class="logo-text text-2xl font-bold text-[#0066CC] [&_span]:text-[#00A651]">Hire<span>Flow</span></span></a>
+        <div class="nav-actions flex items-center gap-[10px]">
+          <a href="login.html" class="btn btn-outline inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 border border-[#0066CC] bg-transparent text-[#0066CC] hover:bg-[#0066CC] hover:text-white">Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mx-auto max-w-[1200px] px-5">
+        <div class="dashboard-layout mt-[30px] grid min-h-[70vh] grid-cols-[250px_minmax(0,1fr)] gap-5">
+            <aside class="sidebar h-fit rounded-lg border border-[#e5e7eb] bg-white py-5">
+                <div class="sidebar-menu [&_a]:block [&_a]:border-l-[3px] [&_a]:border-l-transparent [&_a]:px-5 [&_a]:py-3 [&_a]:font-medium [&_a]:text-[#1f2937] [&_a:hover]:border-l-[#0066CC] [&_a:hover]:bg-[#f0f7ff] [&_a:hover]:text-[#0066CC] [&_a.active]:border-l-[#0066CC] [&_a.active]:bg-[#f0f7ff] [&_a.active]:text-[#0066CC]">
+                    <a class="text-[#0066CC] no-underline" href="employer-dashboard.html">Dashboard</a>
+                    <a class="text-[#0066CC] no-underline" href="employer-jobs.html">My Jobs</a>
+                    <a class="text-[#0066CC] no-underline" href="employer-create-job.html">Post a New Job</a>
+                    <a href="employer-applicants.html" class="active no-underline">Applicants</a>
+                    <a class="text-[#0066CC] no-underline" href="employer-ranking.html">Candidate Ranking</a>
+                </div>
+            </aside>
+
+            <main class="dashboard-content flex flex-col gap-5">
+                <!-- Header -->
+                <div class="dashboard-box ![display:flex] ![justify-content:space-between] ![align-items:center] rounded-lg border border-[#e5e7eb] bg-white p-5">
+                    <div>
+                        <h2>Rahim Ahmed</h2>
+                        <p class="![color:#6b7280]">rahim@email.com | +880 1700-000000</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 bg-[#0066CC] text-white hover:bg-[#0052a3]">Shortlist</button>
+                        <button class="btn btn-outline ![color:red] ![border-color:red] inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 border border-[#0066CC] bg-transparent text-[#0066CC] hover:bg-[#0066CC] hover:text-white">Reject</button>
+                    </div>
+                </div>
+
+                <!-- Match Score Breakdown -->
+                <div class="dashboard-box rounded-lg border border-[#e5e7eb] bg-white p-5">
+                    <h3>Job Match Analysis</h3>
+                    <p class="![font-size:14px] ![color:#6b7280] ![margin-bottom:15px]">Comparing candidate profile with: <strong>Senior React Developer</strong></p>
+                    
+                    <div class="match-container mb-5 flex items-center gap-5 rounded-lg border border-[#cce5ff] bg-[#f0f7ff] p-5">
+                        <div class="match-circle flex h-20 w-20 items-center justify-center rounded-full bg-[conic-gradient(#00A651_85%,#e5e7eb_0)] text-xl font-bold text-[#1f2937]">
+                            <div class="match-circle-inner flex h-[65px] w-[65px] items-center justify-center rounded-full bg-[#f0f7ff]">85%</div>
+                        </div>
+                        <div>
+                            <h3 class="![color:#00A651]">Excellent Match</h3>
+                            <p class="![font-size:14px]">The candidate has most of the required skills for this position.</p>
+                        </div>
+                    </div>
+
+                    <div class="![display:grid] ![grid-template-columns:1fr_1fr] ![gap:20px]">
+                        <div>
+                            <strong class="![color:#166534]">✅ Matched Skills</strong>
+                            <div class="skill-list mt-[10px] flex flex-wrap gap-2">
+                                <span class="skill-tag skill-match rounded-full px-3 py-[5px] text-[13px] font-medium border border-[#bbf7d0] bg-[#dcfce7] text-[#166534]">React.js</span>
+                                <span class="skill-tag skill-match rounded-full px-3 py-[5px] text-[13px] font-medium border border-[#bbf7d0] bg-[#dcfce7] text-[#166534]">JavaScript</span>
+                                <span class="skill-tag skill-match rounded-full px-3 py-[5px] text-[13px] font-medium border border-[#bbf7d0] bg-[#dcfce7] text-[#166534]">HTML/CSS</span>
+                                <span class="skill-tag skill-match rounded-full px-3 py-[5px] text-[13px] font-medium border border-[#bbf7d0] bg-[#dcfce7] text-[#166534]">Git</span>
+                            </div>
+                        </div>
+                        <div>
+                            <strong class="![color:#991b1b]">❌ Missing Skills</strong>
+                            <div class="skill-list mt-[10px] flex flex-wrap gap-2">
+                                <span class="skill-tag skill-missing rounded-full px-3 py-[5px] text-[13px] font-medium border border-[#fecaca] bg-[#fee2e2] text-[#991b1b]">Node.js</span>
+                                <span class="skill-tag skill-missing rounded-full px-3 py-[5px] text-[13px] font-medium border border-[#fecaca] bg-[#fee2e2] text-[#991b1b]">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Details -->
+                <div class="dashboard-box rounded-lg border border-[#e5e7eb] bg-white p-5">
+                    <h3>Candidate Profile</h3>
+                    <p class="![margin-top:10px]"><strong>Experience:</strong> 3 Years in Frontend Development</p>
+                    <p class="![margin-top:5px]"><strong>Education:</strong> B.Sc in CSE, University of Dhaka</p>
+                    <div class="![margin-top:15px]">
+                        <a href="#" class="btn btn-outline inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 border border-[#0066CC] bg-transparent text-[#0066CC] hover:bg-[#0066CC] hover:text-white">Download CV (PDF)</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

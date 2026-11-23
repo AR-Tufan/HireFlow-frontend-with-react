@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Detail - HireFlow</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f3f4f6] leading-6 text-[#1f2937] ![font-family:Inter,sans-serif]">
+    <header class="navbar sticky top-0 z-[100] bg-white shadow-sm">
+      <div class="container nav-container mx-auto max-w-[1200px] px-5 flex h-[70px] items-center justify-between">
+        <a href="index.html" class="logo text-[#0066CC] no-underline"><span class="logo-text text-2xl font-bold text-[#0066CC] [&_span]:text-[#00A651]">Hire<span>Flow</span></span></a>
+        <div class="nav-actions flex items-center gap-[10px]"><a href="login.html" class="btn btn-outline inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 border border-[#0066CC] bg-transparent text-[#0066CC] hover:bg-[#0066CC] hover:text-white">Logout</a></div>
+      </div>
+    </header>
+
+    <div class="container mx-auto max-w-[1200px] px-5">
+        <div class="dashboard-layout mt-[30px] grid min-h-[70vh] grid-cols-[250px_minmax(0,1fr)] gap-5">
+            <aside class="sidebar h-fit rounded-lg border border-[#e5e7eb] bg-white py-5">
+                <div class="sidebar-menu [&_a]:block [&_a]:border-l-[3px] [&_a]:border-l-transparent [&_a]:px-5 [&_a]:py-3 [&_a]:font-medium [&_a]:text-[#1f2937] [&_a:hover]:border-l-[#0066CC] [&_a:hover]:bg-[#f0f7ff] [&_a:hover]:text-[#0066CC] [&_a.active]:border-l-[#0066CC] [&_a.active]:bg-[#f0f7ff] [&_a.active]:text-[#0066CC]">
+                    <a class="text-[#0066CC] no-underline" href="seeker-dashboard.html">Dashboard</a>
+                    <a href="seeker-applications.html" class="active no-underline">My Applications</a>
+                </div>
+            </aside>
+
+            <main class="dashboard-content flex flex-col gap-5">
+                <div class="dashboard-box rounded-lg border border-[#e5e7eb] bg-white p-5">
+                    <h2>Senior React Developer</h2>
+                    <p class="![color:#6b7280] ![font-size:14px]">Google &bull; Applied on 10 Oct 2026</p>
+                    
+                    <div class="timeline relative mt-5 pl-[30px] [&::before]:absolute [&::before]:bottom-0 [&::before]:left-2 [&::before]:top-0 [&::before]:w-0.5 [&::before]:bg-[#e5e7eb] [&::before]:content-['']">
+                        <div class="timeline-item success relative mb-[25px] [&.active_.timeline-dot]:bg-[#0066CC] [&.success_.timeline-dot]:bg-[#00A651]">
+                            <div class="timeline-dot absolute left-[-30px] top-[2px] h-[18px] w-[18px] rounded-full border-[3px] border-white bg-[#e5e7eb]"></div>
+                            <div class="timeline-content">
+                                <h4>Application Submitted</h4>
+                                <p>Your application was successfully submitted.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item success relative mb-[25px] [&.active_.timeline-dot]:bg-[#0066CC] [&.success_.timeline-dot]:bg-[#00A651]">
+                            <div class="timeline-dot absolute left-[-30px] top-[2px] h-[18px] w-[18px] rounded-full border-[3px] border-white bg-[#e5e7eb]"></div>
+                            <div class="timeline-content">
+                                <h4>Under Review</h4>
+                                <p>Employer is reviewing your profile.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item active relative mb-[25px] [&.active_.timeline-dot]:bg-[#0066CC] [&.success_.timeline-dot]:bg-[#00A651]">
+                            <div class="timeline-dot absolute left-[-30px] top-[2px] h-[18px] w-[18px] rounded-full border-[3px] border-white bg-[#e5e7eb]"></div>
+                            <div class="timeline-content">
+                                <h4>Shortlisted (Current Stage)</h4>
+                                <p>Congratulations! You have been shortlisted for an interview.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item relative mb-[25px] [&.active_.timeline-dot]:bg-[#0066CC] [&.success_.timeline-dot]:bg-[#00A651]">
+                            <div class="timeline-dot absolute left-[-30px] top-[2px] h-[18px] w-[18px] rounded-full border-[3px] border-white bg-[#e5e7eb]"></div>
+                            <div class="timeline-content">
+                                <h4>Interview</h4>
+                                <p>Pending scheduling...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

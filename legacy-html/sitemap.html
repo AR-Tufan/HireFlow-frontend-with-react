@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireFlow - Master Sitemap</title>
+    <style>
+        .sitemap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .sitemap-card { background: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #e5e7eb; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .sitemap-card h3 { margin-bottom: 15px; color: #0066CC; border-bottom: 2px solid #f3f4f6; padding-bottom: 10px; }
+        .sitemap-card ul li { margin-bottom: 10px; }
+        .sitemap-card ul li a { display: inline-block; color: #1f2937; transition: 0.2s; }
+        .sitemap-card ul li a:hover { color: #0066CC; transform: translateX(5px); }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f3f4f6] leading-6 text-[#1f2937] ![font-family:Inter,sans-serif]">
+    <header class="navbar sticky top-0 z-[100] bg-white shadow-sm">
+      <div class="container nav-container mx-auto max-w-[1200px] px-5 flex h-[70px] items-center justify-between">
+        <a href="index.html" class="logo text-[#0066CC] no-underline"><span class="logo-text text-2xl font-bold text-[#0066CC] [&_span]:text-[#00A651]">Hire<span>Flow</span></span></a>
+        <div class="nav-actions flex items-center gap-[10px]"><a href="index.html" class="btn btn-outline inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 border border-[#0066CC] bg-transparent text-[#0066CC] hover:bg-[#0066CC] hover:text-white">Back to Home</a></div>
+      </div>
+    </header>
+
+    <div class="container ![margin-top:40px] ![margin-bottom:50px] mx-auto max-w-[1200px] px-5">
+        <h1 class="![text-align:center] ![color:#1f2937] ![margin-bottom:10px]">Project Sitemap</h1>
+        <p class="![text-align:center] ![color:#6b7280] ![margin-bottom:30px]">Click on any link below to navigate directly to that page.</p>
+
+        <div class="sitemap-grid">
+            
+            <!-- Public Pages -->
+            <div class="sitemap-card">
+                <h3>Public Pages</h3>
+                <ul>
+                    <li><a class="text-[#0066CC] no-underline" href="index.html">Home</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="browse-jobs.html">Browse Jobs</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="job-details.html">Job Details</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="company-profile.html">Company Profile</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="about.html">About Us</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Auth Pages -->
+            <div class="sitemap-card">
+                <h3>Authentication</h3>
+                <ul>
+                    <li><a class="text-[#0066CC] no-underline" href="login.html">Login</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="register.html">Register (Role Select)</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="register-seeker.html">Register (Seeker)</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="register-employer.html">Register (Employer)</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="forgot-password.html">Forgot Password</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="reset-password.html">Reset Password</a></li>
+                </ul>
+            </div>
+
+            <!-- Seeker Pages -->
+            <div class="sitemap-card">
+                <h3>Job Seeker Panel</h3>
+                <ul>
+                    <li><a class="text-[#0066CC] no-underline" href="seeker-dashboard.html">Dashboard</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="seeker-profile.html">My Profile</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="seeker-resume.html">My Resume / CV</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="seeker-saved-jobs.html">Saved Jobs</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="seeker-applications.html">My Applications</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="seeker-application-detail.html">Application Detail</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="seeker-notifications.html">Notifications</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="seeker-settings.html">Settings</a></li>
+                </ul>
+            </div>
+
+            <!-- Employer Pages -->
+            <div class="sitemap-card">
+                <h3>Employer Panel</h3>
+                <ul>
+                    <li><a class="text-[#0066CC] no-underline" href="employer-dashboard.html">Dashboard</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="employer-company.html">Company Profile</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="employer-jobs.html">My Jobs</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="employer-create-job.html">Post a New Job</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="employer-applicants.html">Applicants</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="employer-applicant-detail.html">Applicant Detail</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="employer-ranking.html">Candidate Ranking</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="employer-interviews.html">Interviews</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="employer-notifications.html">Notifications</a></li>
+                </ul>
+            </div>
+
+            <!-- Admin Pages -->
+            <div class="sitemap-card">
+                <h3>Admin Panel</h3>
+                <ul>
+                    <li><a class="text-[#0066CC] no-underline" href="admin-dashboard.html">Dashboard</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="admin-users.html">Manage Users</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="admin-employers.html">Employer Verification</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="admin-jobs.html">Job Moderation</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="admin-reports.html">Reports / Analytics</a></li>
+                </ul>
+            </div>
+
+            <!-- Error Pages -->
+            <div class="sitemap-card">
+                <h3>Error Pages</h3>
+                <ul>
+                    <li><a class="text-[#0066CC] no-underline" href="404.html">404 - Not Found</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="403.html">403 - Unauthorized</a></li>
+                    <li><a class="text-[#0066CC] no-underline" href="500.html">500 - Server Error</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

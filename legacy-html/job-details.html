@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details - HireFlow</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f3f4f6] leading-6 text-[#1f2937] ![font-family:Inter,sans-serif]">
+    <header class="navbar sticky top-0 z-[100] bg-white shadow-sm">
+      <div class="container nav-container mx-auto max-w-[1200px] px-5 flex h-[70px] items-center justify-between">
+        <a href="index.html" class="logo text-[#0066CC] no-underline"><span class="logo-text text-2xl font-bold text-[#0066CC] [&_span]:text-[#00A651]">Hire<span>Flow</span></span></a>
+        <nav class="nav-links [&_a]:mx-[15px] [&_a]:font-medium [&_a]:text-[#1f2937] [&_a:hover]:text-[#0066CC]">
+          <a class="text-[#0066CC] no-underline" href="index.html">Home</a>
+          <a class="text-[#0066CC] no-underline" href="browse-jobs.html">Browse Jobs</a>
+        </nav>
+        <div class="nav-actions flex items-center gap-[10px]"><a href="login.html" class="btn btn-outline inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 border border-[#0066CC] bg-transparent text-[#0066CC] hover:bg-[#0066CC] hover:text-white">Login</a></div>
+      </div>
+    </header>
+
+    <div class="container mx-auto max-w-[1200px] px-5">
+        <div class="job-details-layout">
+            <!-- Left Side: Job Info -->
+            <main class="job-main-box">
+                <h2>Senior React Developer</h2>
+                <div class="job-meta">
+                    <strong>Google</strong> &bull; Dhaka, Bangladesh &bull; Full Time
+                </div>
+
+                <h3>Job Description</h3>
+                <p>We are looking for an experienced React Developer to join our dynamic team. You will be responsible for developing and implementing user interface components using React.js concepts and workflows such as Redux, Flux, and Webpack.</p>
+
+                <h3>Responsibilities</h3>
+                <ul>
+                    <li>Developing new user-facing features using React.js</li>
+                    <li>Building reusable components and front-end libraries for future use</li>
+                    <li>Translating designs and wireframes into high-quality code</li>
+                </ul>
+
+                <h3>Requirements</h3>
+                <ul>
+                    <li>3+ years of experience in React.js development</li>
+                    <li>Strong proficiency in JavaScript, including DOM manipulation</li>
+                    <li>Experience with Node.js and MongoDB is a plus</li>
+                </ul>
+            </main>
+
+            <!-- Right Side: Sidebar -->
+            <aside class="job-side-box">
+                <div class="![text-align:center] ![margin-bottom:20px]">
+                    <div class="company-logo ![margin:0_auto_10px] ![width:60px] ![height:60px] ![font-size:24px] flex h-[50px] w-[50px] shrink-0 items-center justify-center rounded-lg bg-[#f3f4f6] text-xl font-bold text-[#0066CC]">G</div>
+                    <h3>Google</h3>
+                    <a href="company-profile.html" class="![font-size:14px] text-[#0066CC] no-underline">View Company Profile</a>
+                </div>
+
+                <div class="![border-top:1px_solid_#e5e7eb] ![padding-top:15px] ![margin-bottom:20px]">
+                    <p class="![font-size:14px] ![margin-bottom:8px]"><strong>Salary:</strong> ৳ 80,000 - 120,000</p>
+                    <p class="![font-size:14px] ![margin-bottom:8px]"><strong>Deadline:</strong> 30 Oct 2026</p>
+                    <p class="![font-size:14px]"><strong>Applicants:</strong> 45</p>
+                </div>
+
+                <a href="seeker-dashboard.html" class="btn btn-primary btn-block ![margin-bottom:10px] inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 bg-[#0066CC] text-white hover:bg-[#0052a3] w-full p-3 text-base">Apply Now</a>
+                <a href="seeker-saved-jobs.html" class="btn btn-outline btn-block inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 border border-[#0066CC] bg-transparent text-[#0066CC] hover:bg-[#0066CC] hover:text-white w-full p-3 text-base">Save Job</a>
+            </aside>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+<script src="js/jobs.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Moderation - HireFlow Admin</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f3f4f6] leading-6 text-[#1f2937] ![font-family:Inter,sans-serif]">
+    <!-- Navbar -->
+    <header class="navbar sticky top-0 z-[100] bg-white shadow-sm">
+      <div class="container nav-container mx-auto max-w-[1200px] px-5 flex h-[70px] items-center justify-between">
+        <a href="index.html" class="logo text-[#0066CC] no-underline"><span class="logo-text ![color:red] text-2xl font-bold text-[#0066CC] [&_span]:text-[#00A651]">Hire<span>Flow</span> Admin</span></a>
+        <div class="nav-actions flex items-center gap-[10px]">
+            <a href="login.html" class="btn btn-outline inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 border border-[#0066CC] bg-transparent text-[#0066CC] hover:bg-[#0066CC] hover:text-white">Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Dashboard Layout -->
+    <div class="container mx-auto max-w-[1200px] px-5">
+        <div class="dashboard-layout mt-[30px] grid min-h-[70vh] grid-cols-[250px_minmax(0,1fr)] gap-5">
+            
+            <!-- Admin Sidebar -->
+            <aside class="sidebar h-fit rounded-lg border border-[#e5e7eb] bg-white py-5">
+                <div class="sidebar-menu [&_a]:block [&_a]:border-l-[3px] [&_a]:border-l-transparent [&_a]:px-5 [&_a]:py-3 [&_a]:font-medium [&_a]:text-[#1f2937] [&_a:hover]:border-l-[#0066CC] [&_a:hover]:bg-[#f0f7ff] [&_a:hover]:text-[#0066CC] [&_a.active]:border-l-[#0066CC] [&_a.active]:bg-[#f0f7ff] [&_a.active]:text-[#0066CC]">
+                    <a class="text-[#0066CC] no-underline" href="admin-dashboard.html">Dashboard</a>
+                    <a class="text-[#0066CC] no-underline" href="admin-users.html">Manage Users</a>
+                    <a class="text-[#0066CC] no-underline" href="admin-employers.html">Employer Verification</a>
+                    <a href="admin-jobs.html" class="active no-underline">Job Moderation</a>
+                    <a class="text-[#0066CC] no-underline" href="admin-reports.html">Reports</a>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="dashboard-content flex flex-col gap-5">
+                <div class="dashboard-box rounded-lg border border-[#e5e7eb] bg-white p-5">
+                    <h2 class="![margin-bottom:20px]">Job Post Moderation</h2>
+                    <p class="![color:#6b7280] ![margin-bottom:20px] ![font-size:14px]">Review job posts and remove any inappropriate or spam content.</p>
+                    
+                    <table class="![width:100%] ![text-align:left] ![border-collapse:collapse] w-full border-collapse text-left">
+                        <thead>
+                            <tr class="![border-bottom:2px_solid_#e5e7eb]">
+                                <th class="![padding:10px_0] border-b-2 border-[#e5e7eb] py-[10px]">Job Title</th>
+                                <th class="border-b-2 border-[#e5e7eb] py-[10px]">Company</th>
+                                <th class="border-b-2 border-[#e5e7eb] py-[10px]">Date Posted</th>
+                                <th class="border-b-2 border-[#e5e7eb] py-[10px]">Status</th>
+                                <th class="border-b-2 border-[#e5e7eb] py-[10px]">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Row 1: Active Job -->
+                            <tr class="![border-bottom:1px_solid_#e5e7eb]">
+                                <td class="![padding:15px_0] ![font-weight:500] border-b border-[#e5e7eb] py-[15px]">Senior React Developer</td>
+                                <td class="border-b border-[#e5e7eb] py-[15px]">Google</td>
+                                <td class="![font-size:14px] ![color:#6b7280] border-b border-[#e5e7eb] py-[15px]">12 Oct 2026</td>
+                                <td class="border-b border-[#e5e7eb] py-[15px]"><span class="![background:#dcfce7] ![color:#166534] ![padding:4px_8px] ![border-radius:4px] ![font-size:12px]">Active</span></td>
+                                <td class="border-b border-[#e5e7eb] py-[15px]">
+                                    <button class="btn btn-outline ![padding:5px_10px] ![font-size:12px] ![color:red] ![border-color:red] inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 border border-[#0066CC] bg-transparent text-[#0066CC] hover:bg-[#0066CC] hover:text-white">Remove</button>
+                                </td>
+                            </tr>
+                            
+                            <!-- Row 2: Flagged Spam Job -->
+                            <tr class="![border-bottom:1px_solid_#e5e7eb]">
+                                <td class="![padding:15px_0] ![font-weight:500] border-b border-[#e5e7eb] py-[15px]">Earn Money Fast!! (No Experience)</td>
+                                <td class="border-b border-[#e5e7eb] py-[15px]">Spam Company Ltd.</td>
+                                <td class="![font-size:14px] ![color:#6b7280] border-b border-[#e5e7eb] py-[15px]">13 Oct 2026</td>
+                                <td class="border-b border-[#e5e7eb] py-[15px]"><span class="![background:#fee2e2] ![color:#991b1b] ![padding:4px_8px] ![border-radius:4px] ![font-size:12px]">Flagged</span></td>
+                                <td class="border-b border-[#e5e7eb] py-[15px]">
+                                    <button class="btn btn-outline ![padding:5px_10px] ![font-size:12px] ![color:red] ![border-color:red] inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 border border-[#0066CC] bg-transparent text-[#0066CC] hover:bg-[#0066CC] hover:text-white">Remove</button>
+                                </td>
+                            </tr>
+
+                            <!-- Row 3: Another Active Job -->
+                            <tr class="![border-bottom:1px_solid_#e5e7eb]">
+                                <td class="![padding:15px_0] ![font-weight:500] border-b border-[#e5e7eb] py-[15px]">Marketing Manager</td>
+                                <td class="border-b border-[#e5e7eb] py-[15px]">Tech BD Ltd.</td>
+                                <td class="![font-size:14px] ![color:#6b7280] border-b border-[#e5e7eb] py-[15px]">10 Oct 2026</td>
+                                <td class="border-b border-[#e5e7eb] py-[15px]"><span class="![background:#dcfce7] ![color:#166534] ![padding:4px_8px] ![border-radius:4px] ![font-size:12px]">Active</span></td>
+                                <td class="border-b border-[#e5e7eb] py-[15px]">
+                                    <button class="btn btn-outline ![padding:5px_10px] ![font-size:12px] ![color:red] ![border-color:red] inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 border border-[#0066CC] bg-transparent text-[#0066CC] hover:bg-[#0066CC] hover:text-white">Remove</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

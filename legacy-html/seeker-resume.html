@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume - HireFlow</title>
+    <style>
+        .upload-area {
+            border: 2px dashed #0066CC;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            background: #f0f7ff;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f3f4f6] leading-6 text-[#1f2937] ![font-family:Inter,sans-serif]">
+    <header class="navbar sticky top-0 z-[100] bg-white shadow-sm">
+      <div class="container nav-container mx-auto max-w-[1200px] px-5 flex h-[70px] items-center justify-between">
+        <a href="index.html" class="logo text-[#0066CC] no-underline"><span class="logo-text text-2xl font-bold text-[#0066CC] [&_span]:text-[#00A651]">Hire<span>Flow</span></span></a>
+        <div class="nav-actions flex items-center gap-[10px]">
+          <a href="login.html" class="btn btn-outline inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 border border-[#0066CC] bg-transparent text-[#0066CC] hover:bg-[#0066CC] hover:text-white">Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mx-auto max-w-[1200px] px-5">
+        <div class="dashboard-layout mt-[30px] grid min-h-[70vh] grid-cols-[250px_minmax(0,1fr)] gap-5">
+            <aside class="sidebar h-fit rounded-lg border border-[#e5e7eb] bg-white py-5">
+                <div class="sidebar-menu [&_a]:block [&_a]:border-l-[3px] [&_a]:border-l-transparent [&_a]:px-5 [&_a]:py-3 [&_a]:font-medium [&_a]:text-[#1f2937] [&_a:hover]:border-l-[#0066CC] [&_a:hover]:bg-[#f0f7ff] [&_a:hover]:text-[#0066CC] [&_a.active]:border-l-[#0066CC] [&_a.active]:bg-[#f0f7ff] [&_a.active]:text-[#0066CC]">
+                    <a class="text-[#0066CC] no-underline" href="seeker-dashboard.html">Dashboard</a>
+                    <a class="text-[#0066CC] no-underline" href="seeker-profile.html">My Profile</a>
+                    <a href="seeker-resume.html" class="active no-underline">My Resume / CV</a>
+                    <a class="text-[#0066CC] no-underline" href="seeker-applications.html">My Applications</a>
+                    <a class="text-[#0066CC] no-underline" href="seeker-saved-jobs.html">Saved Jobs</a>
+                </div>
+            </aside>
+
+            <main class="dashboard-content flex flex-col gap-5">
+                <div class="dashboard-box rounded-lg border border-[#e5e7eb] bg-white p-5">
+                    <h2 class="![margin-bottom:20px]">Upload Your CV</h2>
+                    
+                    <div class="upload-area">
+                        <div class="![font-size:40px] ![color:#0066CC] ![margin-bottom:10px]">📄</div>
+                        <h3>Drag & Drop your PDF here</h3>
+                        <p class="![color:#6b7280] ![font-size:14px] ![margin-bottom:15px]">or click to browse from your computer</p>
+                        <button class="btn btn-primary inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 bg-[#0066CC] text-white hover:bg-[#0052a3]">Select File</button>
+                        <p class="![font-size:12px] ![margin-top:10px] ![color:#6b7280]">Supported format: PDF only (Max 5MB)</p>
+                    </div>
+                </div>
+
+                <div class="dashboard-box rounded-lg border border-[#e5e7eb] bg-white p-5">
+                    <h3 class="![margin-bottom:15px]">Extracted Information</h3>
+                    <p class="![font-size:14px] ![color:#6b7280] ![margin-bottom:15px]">Our AI has extracted the following data from your CV. Please review.</p>
+                    
+                    <div class="![margin-bottom:15px]">
+                        <strong>Skills:</strong> <br>
+                        <span class="job-tag ![margin-top:5px] ![display:inline-block] rounded-[5px] bg-[#f3f4f6] px-[10px] py-[5px] text-xs">React.js</span>
+                        <span class="job-tag ![margin-top:5px] ![display:inline-block] rounded-[5px] bg-[#f3f4f6] px-[10px] py-[5px] text-xs">Node.js</span>
+                        <span class="job-tag ![margin-top:5px] ![display:inline-block] rounded-[5px] bg-[#f3f4f6] px-[10px] py-[5px] text-xs">MongoDB</span>
+                    </div>
+
+                    <div class="![margin-bottom:15px]">
+                        <strong>Education:</strong> <br>
+                        <span class="![font-size:14px]">B.Sc in Computer Science - University of Dhaka</span>
+                    </div>
+
+                    <button class="btn btn-outline inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 border border-[#0066CC] bg-transparent text-[#0066CC] hover:bg-[#0066CC] hover:text-white">Edit Information</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

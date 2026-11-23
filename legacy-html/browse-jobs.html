@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Jobs - HireFlow</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f3f4f6] leading-6 text-[#1f2937] ![font-family:Inter,sans-serif]">
+    <header class="navbar sticky top-0 z-[100] bg-white shadow-sm">
+      <div class="container nav-container mx-auto max-w-[1200px] px-5 flex h-[70px] items-center justify-between">
+        <a href="index.html" class="logo text-[#0066CC] no-underline"><span class="logo-text text-2xl font-bold text-[#0066CC] [&_span]:text-[#00A651]">Hire<span>Flow</span></span></a>
+        <nav class="nav-links [&_a]:mx-[15px] [&_a]:font-medium [&_a]:text-[#1f2937] [&_a:hover]:text-[#0066CC]">
+          <a class="text-[#0066CC] no-underline" href="index.html">Home</a>
+          <a class="text-[#0066CC] no-underline" href="browse-jobs.html">Browse Jobs</a>
+          <a class="text-[#0066CC] no-underline" href="about.html">About</a>
+        </nav>
+        <div class="nav-actions flex items-center gap-[10px]">
+          <a href="login.html" class="btn btn-outline inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 border border-[#0066CC] bg-transparent text-[#0066CC] hover:bg-[#0066CC] hover:text-white">Login</a>
+          <a href="register.html" class="btn btn-primary inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 bg-[#0066CC] text-white hover:bg-[#0052a3]">Register</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mx-auto max-w-[1200px] px-5">
+        <div class="browse-layout mt-[30px] grid grid-cols-[280px_minmax(0,1fr)] gap-[30px]">
+            <!-- Filter Sidebar -->
+            <aside class="filter-box rounded-lg border border-[#e5e7eb] bg-white p-5 [&_h3]:mb-5 [&_h3]:border-b [&_h3]:border-[#e5e7eb] [&_h3]:pb-[10px] [&_h3]:text-lg">
+                <h3>Filter Jobs</h3>
+                <div class="filter-group mb-5 [&_label]:mb-2 [&_label]:block [&_label]:text-sm [&_label]:font-medium [&_select]:w-full [&_select]:rounded [&_select]:border [&_select]:border-[#e5e7eb] [&_select]:p-[10px] [&_select]:outline-none">
+                    <label>Category</label>
+                    <select>
+                        <option>All Categories</option>
+                        <option>IT & Software</option>
+                        <option>Marketing</option>
+                    </select>
+                </div>
+                <div class="filter-group mb-5 [&_label]:mb-2 [&_label]:block [&_label]:text-sm [&_label]:font-medium [&_select]:w-full [&_select]:rounded [&_select]:border [&_select]:border-[#e5e7eb] [&_select]:p-[10px] [&_select]:outline-none">
+                    <label>Location</label>
+                    <select>
+                        <option>Any Location</option>
+                        <option>Dhaka</option>
+                        <option>Remote</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary btn-block inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 bg-[#0066CC] text-white hover:bg-[#0052a3] w-full p-3 text-base">Apply Filters</button>
+            </aside>
+
+            <!-- Job List -->
+            <main>
+                <div class="job-card ![margin-bottom:15px] rounded-lg border border-[#e5e7eb] bg-white p-5 shadow-sm">
+                    <div class="job-card-header mb-[15px] flex gap-[15px]">
+                        <div class="company-logo flex h-[50px] w-[50px] shrink-0 items-center justify-center rounded-lg bg-[#f3f4f6] text-xl font-bold text-[#0066CC]">G</div>
+                        <div>
+                            <h3 class="job-title mb-[5px] text-lg text-[#1f2937]">Senior React Developer</h3>
+                            <p class="company-name text-sm text-[#6b7280]">Google</p>
+                        </div>
+                    </div>
+                    <div class="job-details mb-5 flex flex-wrap gap-[10px]">
+                        <span class="job-tag rounded-[5px] bg-[#f3f4f6] px-[10px] py-[5px] text-xs">Dhaka, BD</span>
+                        <span class="job-tag rounded-[5px] bg-[#f3f4f6] px-[10px] py-[5px] text-xs">Full Time</span>
+                        <span class="job-tag rounded-[5px] bg-[#f3f4f6] px-[10px] py-[5px] text-xs">React.js</span>
+                    </div>
+                    <div class="job-card-footer flex items-center justify-between border-t border-[#e5e7eb] pt-[15px]">
+                        <span class="salary font-semibold text-[#00A651]">৳ 80,000 - 120,000</span>
+                        <a href="job-details.html" class="btn btn-outline inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 border border-[#0066CC] bg-transparent text-[#0066CC] hover:bg-[#0066CC] hover:text-white">View Details</a>
+                    </div>
+                </div>
+
+                <div class="job-card rounded-lg border border-[#e5e7eb] bg-white p-5 shadow-sm">
+                    <div class="job-card-header mb-[15px] flex gap-[15px]">
+                        <div class="company-logo flex h-[50px] w-[50px] shrink-0 items-center justify-center rounded-lg bg-[#f3f4f6] text-xl font-bold text-[#0066CC]">B</div>
+                        <div>
+                            <h3 class="job-title mb-[5px] text-lg text-[#1f2937]">Node.js Backend Developer</h3>
+                            <p class="company-name text-sm text-[#6b7280]">Brain Station 23</p>
+                        </div>
+                    </div>
+                    <div class="job-details mb-5 flex flex-wrap gap-[10px]">
+                        <span class="job-tag rounded-[5px] bg-[#f3f4f6] px-[10px] py-[5px] text-xs">Dhaka, BD</span>
+                        <span class="job-tag rounded-[5px] bg-[#f3f4f6] px-[10px] py-[5px] text-xs">Full Time</span>
+                        <span class="job-tag rounded-[5px] bg-[#f3f4f6] px-[10px] py-[5px] text-xs">MongoDB</span>
+                    </div>
+                    <div class="job-card-footer flex items-center justify-between border-t border-[#e5e7eb] pt-[15px]">
+                        <span class="salary font-semibold text-[#00A651]">৳ 60,000 - 90,000</span>
+                        <a href="job-details.html" class="btn btn-outline inline-block cursor-pointer rounded-lg px-4 py-2 text-center font-medium transition duration-300 border border-[#0066CC] bg-transparent text-[#0066CC] hover:bg-[#0066CC] hover:text-white">View Details</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer ![margin-top:50px] mt-10 border-t border-[#e5e7eb] bg-white px-0 pt-10 pb-5">
+      <div class="footer-bottom mt-5 border-t border-[#e5e7eb] pt-5 text-center text-sm text-[#6b7280]"><p>&copy; 2026 HireFlow. All rights reserved.</p></div>
+    </footer>
+
+
+<script src="js/main.js"></script>
+<script src="js/jobs.js"></script> <!-- শুধু jobs পেজে -->
+
+
+</body>
+</html>
